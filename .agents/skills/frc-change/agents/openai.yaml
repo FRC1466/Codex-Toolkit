@@ -1,0 +1,5 @@
+interface:
+  display_name: "FRC design changes"
+  short_description: "Trace hardware and architecture change consequences"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "name": "example-only-not-installed-hardware",
+  "revision": null,
+  "status": "example",
+  "facts": {
+    "gear_ratio_motor_per_mechanism": {"value": null, "status": "unknown", "source": null},
+    "travel_limits_degrees": {"value": null, "status": "unknown", "source": null},
+    "motor_id": {"value": null, "status": "unknown", "source": null}
+  },
+  "notes": "Documentation example. Never treat these unknowns as zero or runtime settings. For real profiles use confirmed, provisional, or unknown for each fact, and record measurement/CAD source and date."
+}

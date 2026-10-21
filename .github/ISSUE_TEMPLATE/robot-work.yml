@@ -1,0 +1,27 @@
+name: Robot development task
+description: Scope a prototype, robot feature, investigation, or integration task.
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should work, or what question should this experiment answer?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Hardware and current evidence
+      description: Link the physical revision, known facts, provisional assumptions, and relevant logs.
+  - type: textarea
+    id: coordination
+    attributes:
+      label: Ownership and dependencies
+      description: Student responsible, branch and target branch, related tasks, shared interfaces/files, and expected integration order. This is coordination information, not a lock.
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance and verification
+      description: Observable success, software checks, hardware tests, and how to stop or recover from the experiment.
+    validations:
+      required: true

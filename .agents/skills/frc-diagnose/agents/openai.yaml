@@ -1,0 +1,5 @@
+interface:
+  display_name: "FRC log diagnosis"
+  short_description: "Explain failures using code and recorded evidence"
+policy:
+  allow_implicit_invocation: true

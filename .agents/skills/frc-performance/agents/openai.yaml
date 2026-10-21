@@ -1,0 +1,5 @@
+interface:
+  display_name: "FRC performance and tuning"
+  short_description: "Measure timing and mechanism control performance"
+policy:
+  allow_implicit_invocation: true

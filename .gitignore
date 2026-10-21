@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.frc/
+*.wpilog
+*.hoot
+.DS_Store

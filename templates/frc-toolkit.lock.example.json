@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "name": "frc-codex-toolkit",
+  "version": "0.1.0",
+  "source_repository": null,
+  "source_ref": null,
+  "source_commit": null,
+  "source_kind": "unknown",
+  "installed_at": null,
+  "status": "example-not-installed",
+  "hash_format": "utf8-lf-sha256",
+  "files": {},
+  "managed_blocks": {},
+  "project_integrations": {},
+  "validation": {
+    "required_files": "not-run",
+    "skill_metadata": "not-run",
+    "instruction_discovery": "not-run",
+    "helper_execution": "not-run",
+    "robot_checks": "not-run"
+  },
+  "conflicts": [],
+  "record_format_notes": {
+    "files": "Key by installed relative path; include operation, ownership, source_commit, upstream_sha256, installed_sha256, and status. Record a reason for unknown hashes. For a conflict retain the actual installed revision and separately identify the pending one.",
+    "managed_blocks": "Key by containing relative file; include begin/end markers, source_commit, upstream_sha256, installed_sha256, and status. Hash block text separately from the outside instructions.",
+    "project_integrations": "Record config/context/ignore/template edits as project-owned; never use their full-file hashes as permission to overwrite project settings.",
+    "example": "This is a format example with no real installation evidence. Fill fields from observed source and installed content; do not copy this file directly as a completed lock."
+  }
+}

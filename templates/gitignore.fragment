@@ -1,0 +1,3 @@
+# FRC toolkit transient output
+.frc/
+tools/frc/__pycache__/

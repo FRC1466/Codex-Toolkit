@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "name": "frc-codex-toolkit",
+  "version": "0.1.0",
+  "instructions": "INSTALL.md",
+  "tracking_file": "frc-toolkit.lock.json",
+  "copy_files": [
+    ".agents/skills/frc-task/SKILL.md",
+    ".agents/skills/frc-task/agents/openai.yaml",
+    ".agents/skills/frc-prototype/SKILL.md",
+    ".agents/skills/frc-prototype/agents/openai.yaml",
+    ".agents/skills/frc-experiment/SKILL.md",
+    ".agents/skills/frc-experiment/agents/openai.yaml",
+    ".agents/skills/frc-change/SKILL.md",
+    ".agents/skills/frc-change/agents/openai.yaml",
+    ".agents/skills/frc-diagnose/SKILL.md",
+    ".agents/skills/frc-diagnose/agents/openai.yaml",
+    ".agents/skills/frc-verify/SKILL.md",
+    ".agents/skills/frc-verify/agents/openai.yaml",
+    ".agents/skills/frc-integrate/SKILL.md",
+    ".agents/skills/frc-integrate/agents/openai.yaml",
+    ".agents/skills/frc-auto/SKILL.md",
+    ".agents/skills/frc-auto/agents/openai.yaml",
+    ".agents/skills/frc-performance/SKILL.md",
+    ".agents/skills/frc-performance/agents/openai.yaml",
+    "tools/frc/frc.py",
+    "tools/frc/wpilog.py",
+    "docs/tooling.md",
+    "docs/skill-evaluation.md",
+    "docs/robot/examples/hardware.json"
+  ],
+  "merge_files": [
+    {
+      "source": "templates/AGENTS.fragment.md",
+      "destination": "AGENTS.md",
+      "strategy": "managed-block",
+      "begin_marker": "<!-- frc-codex-toolkit:begin -->",
+      "end_marker": "<!-- frc-codex-toolkit:end -->"
+    },
+    {
+      "source": "templates/frc-toolkit.project.json",
+      "destination": "frc-toolkit.json",
+      "strategy": "missing-defaults-and-project-adaptation"
+    },
+    {
+      "source": "templates/gitignore.fragment",
+      "destination": ".gitignore",
+      "strategy": "append-missing-entries"
+    }
+  ],
+  "create_if_missing": [
+    {
+      "source": "templates/robot-context.md",
+      "destination": "docs/robot/context.md",
+      "ownership": "project"
+    }
+  ],
+  "optional_templates": [
+    ".github/ISSUE_TEMPLATE/robot-work.yml",
+    ".github/pull_request_template.md"
+  ],
+  "source_only": [
+    "README.md",
+    "AGENTS.md",
+    "INSTALL.md",
+    "INSTALL_PROMPT.md",
+    "UPDATE_PROMPT.md",
+    "toolkit-manifest.json",
+    "templates/",
+    "frc-toolkit.json",
+    ".gitignore",
+    "docs/robot/context.md",
+    "tools/frc/tests/",
+    ".github/workflows/toolkit.yml",
+    ".git/"
+  ]
+}

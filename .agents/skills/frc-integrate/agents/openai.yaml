@@ -1,0 +1,5 @@
+interface:
+  display_name: "FRC branch integration"
+  short_description: "Check combined behavior across student branches"
+policy:
+  allow_implicit_invocation: true

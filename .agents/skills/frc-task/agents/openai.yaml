@@ -1,0 +1,5 @@
+interface:
+  display_name: "FRC task coordination"
+  short_description: "Scope robot work and coordinate student branches"
+policy:
+  allow_implicit_invocation: true

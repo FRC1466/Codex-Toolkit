@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "project_kind": "toolkit",
+  "integration_target": null,
+  "coordination": {
+    "provider": "github",
+    "repository": null
+  },
+  "verification": {
+    "toolkit": {
+      "scope": "toolkit",
+      "argv": ["{python}", "-m", "unittest", "discover", "-s", "tools/frc/tests", "-v"],
+      "cwd": ".",
+      "timeout_seconds": 120
+    }
+  }
+}

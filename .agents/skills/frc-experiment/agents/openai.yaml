@@ -1,0 +1,5 @@
+interface:
+  display_name: "FRC experiments"
+  short_description: "Plan trials and compare measured prototype results"
+policy:
+  allow_implicit_invocation: true

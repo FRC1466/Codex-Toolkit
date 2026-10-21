@@ -1,0 +1,5 @@
+interface:
+  display_name: "FRC autonomous development"
+  short_description: "Build autonomous routines with explicit recovery"
+policy:
+  allow_implicit_invocation: true

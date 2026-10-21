@@ -1,0 +1,5 @@
+interface:
+  display_name: "FRC verification"
+  short_description: "Verify behavior and prepare reviewable evidence"
+policy:
+  allow_implicit_invocation: true
