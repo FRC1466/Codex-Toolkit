@@ -1,5 +1,7 @@
 # FRC Codex toolkit
 
+Toolkit source: [FRC1466/Codex-Toolkit](https://github.com/FRC1466/Codex-Toolkit).
+
 Describe the task normally in Codex. For example:
 
 - “We have a motor and an encoder on a bench. Get the prototype running.”
@@ -14,13 +16,13 @@ The toolkit contains workflows and working utilities, not a robot implementation
 ## Add it to a code project
 
 1. Open the **destination code project** in Codex.
-2. Copy [the installation prompt](INSTALL_PROMPT.md), replace `TOOLKIT_REPOSITORY_URL` with this repository's GitHub URL, and send it to Codex. The prompt works with a fresh account/session; no toolkit skill needs to be installed first.
+2. Copy [the installation prompt](INSTALL_PROMPT.md) and send it to Codex. The repository URL is already filled in. The prompt works with a fresh account/session; no toolkit skill needs to be installed first.
 3. Codex reads [INSTALL.md](INSTALL.md) and [the file manifest](toolkit-manifest.json), installs the files, merges project instructions, and records the exact source revision in the destination's `frc-toolkit.lock.json`.
 4. Review and commit those local changes through the team's normal workflow. Other students receive the toolkit with the code repository and need no separate account setup.
 
 No standalone installer, executable download, plugin installation, administrator access, or user-opened terminal is required. Codex uses its existing file/network tools. File installation and skill use do not need Python; optional helpers need an existing Python 3.10+ interpreter. If repository access is unavailable, download/extract a ZIP in the browser/file manager and give Codex that local source folder. See the prompt for details.
 
-Once you publish this source repository, its GitHub URL is the only substitution needed in the install prompt. No owner/repository name is hardcoded in the toolkit. Version `0.1.0` is a package label; installation resolves a real commit and never assumes a matching tag or release exists.
+The install prompt uses `https://github.com/FRC1466/Codex-Toolkit.git`. To install from a fork, replace that URL with the fork's URL; installation records the source actually used. Version `0.1.0` is a package label; installation resolves a real commit and never assumes a matching tag or release exists.
 
 ## Maintain installations
 

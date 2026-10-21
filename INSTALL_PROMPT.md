@@ -1,9 +1,9 @@
 # Install from a fresh Codex session
 
-Open the **destination code project** in Codex. Copy the prompt below into its chat and replace `TOOLKIT_REPOSITORY_URL` with this toolkit's GitHub repository URL after it has been published. No toolkit skill, plugin, shared chat history, or personal Codex configuration is needed beforehand.
+Open the **destination code project** in Codex and copy the prompt below into its chat. It already points to [FRC1466/Codex-Toolkit](https://github.com/FRC1466/Codex-Toolkit); no edits are needed. No toolkit skill, plugin, shared chat history, or personal Codex configuration is needed beforehand.
 
 ```text
-Install the FRC Codex toolkit from TOOLKIT_REPOSITORY_URL into the project currently open in this chat.
+Install the FRC Codex toolkit from https://github.com/FRC1466/Codex-Toolkit.git into the project currently open in this chat.
 
 Read INSTALL.md and toolkit-manifest.json from that repository, then carry out the project installation described there. Use a single source revision: unless I specify a ref, resolve the repository's default branch to a commit and record that commit. Do not assume a release or tag exists.
 

@@ -1,6 +1,7 @@
 {
   "schema_version": 1,
   "name": "frc-codex-toolkit",
+  "repository": "https://github.com/FRC1466/Codex-Toolkit.git",
   "version": "0.1.0",
   "instructions": "INSTALL.md",
   "tracking_file": "frc-toolkit.lock.json",

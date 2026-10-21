@@ -1,6 +1,6 @@
 # Update an installed project
 
-Open the destination code project in Codex and copy this prompt. It assumes an installation record already exists; if it does not, use [the installation prompt](INSTALL_PROMPT.md) and provide the source repository URL.
+Open the destination code project in Codex and copy this prompt. It assumes an installation record already exists; if it does not, use [the installation prompt](INSTALL_PROMPT.md), which already includes the toolkit repository URL.
 
 ```text
 Update the FRC Codex toolkit installed in this project.
