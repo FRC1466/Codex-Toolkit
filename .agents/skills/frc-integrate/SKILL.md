@@ -7,6 +7,8 @@ description: "Review and combine FRC student or agent branches, resolve merge co
 
 Identify the source branches, intended target, owners, shared interfaces, and dependency order. Inspect published task/PR context through available authorized access. Do not assume that local remote-tracking refs are current or that private chats/uncommitted work are visible.
 
+For Team 1466, follow the [manual merge and handoff preference](../frc-prototype/references/1466-subsystem-preferences.md#faults-diagnosis-and-review). Prepare or open the PR when authorized and leave the final merge to the designated maintainer.
+
 Use `tools/frc/frc.py workspace --base <target>` and `overlap --base <target> --other <branch>` for read-only inspection. The overlap helper compares committed changes since each branch's merge base and includes this checkout's dirty paths; it reports file overlap, not semantic compatibility or a mergeability guarantee. Fetch only when appropriate/authorized, and report inspected commits.
 
 If no existing Python 3.10+ interpreter is available for the helpers, perform equivalent read-only Git inspection with available tools and report any gaps. Do not require runtime installation or a user-opened terminal for integration work.

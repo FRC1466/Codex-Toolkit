@@ -10,6 +10,7 @@
     ".agents/skills/frc-task/agents/openai.yaml",
     ".agents/skills/frc-prototype/SKILL.md",
     ".agents/skills/frc-prototype/agents/openai.yaml",
+    ".agents/skills/frc-prototype/references/1466-subsystem-preferences.md",
     ".agents/skills/frc-experiment/SKILL.md",
     ".agents/skills/frc-experiment/agents/openai.yaml",
     ".agents/skills/frc-change/SKILL.md",
@@ -71,6 +72,7 @@
     "frc-toolkit.json",
     ".gitignore",
     "docs/robot/context.md",
+    "docs/robot/1466-subsystem-standard-draft.md",
     "tools/frc/tests/",
     ".github/workflows/toolkit.yml",
     ".git/"

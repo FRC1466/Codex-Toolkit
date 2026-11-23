@@ -7,7 +7,9 @@ description: "Build, revise, and debug FRC autonomous routines, trajectories, me
 
 Inspect current autonomous APIs, installed planner version, trajectory sources/generated files, field coordinates/alliance conventions, and mechanism interfaces. Verify season-specific field/rules from current official sources when needed. Do not choose Choreo, PathPlanner, commands, or a state-machine framework merely because a prior robot used it.
 
-Translate the requested strategy into a sequence/graph with explicit starting conditions, driving segments, mechanism actions, completion conditions, time budgets, interruption, and fallback behavior. Keep operator intent separate from measured success. A missed pickup, failed homing, invalid pose, or unreachable mechanism target must not silently become success.
+For Team 1466, apply the [autonomous and fault preferences](../frc-prototype/references/1466-subsystem-preferences.md#autonomous-and-coordination) for planner choice, failure handling, and the handoff format.
+
+Translate the requested strategy into a sequence/graph with explicit starting conditions, driving segments, mechanism actions, completion conditions, time budgets, interruptions, and fault responses. Include alternate actions when requested or specified by the project. Keep operator intent separate from measured success. A missed pickup, failed homing, invalid pose, or unreachable mechanism target must not silently become success.
 
 Define interface agreements with concurrently developed mechanisms: units, goal ownership, readiness, completion and failures. Prototype/stub mechanisms can allow sequencing work, but must visibly report unavailable behavior and cannot establish physical readiness.
 

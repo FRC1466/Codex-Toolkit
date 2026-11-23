@@ -5,6 +5,8 @@ description: "Measure and improve FRC loop timing, CAN traffic, mechanism contro
 
 # Improve measured performance
 
+For Team 1466, follow [the team's bring-up and tuning preferences](../frc-prototype/references/1466-subsystem-preferences.md#build-and-bring-up-mechanisms) for controller choice and tuning mode.
+
 Identify whether the objective is CPU/loop timing, device/network latency, mechanism response, or task cycle time. Establish the current hardware/code/settings, an observable metric, and the reliability/accuracy constraints it must preserve. Do not optimize from names or guessed bottlenecks.
 
 For software timing, inspect profiler/tracer semantics and a real-robot baseline. Markers may measure time since the preceding marker rather than exclusive execution time. Examine typical and tail latency, overruns, calls that block, allocations, repeated configuration, logging, and signal frequencies. Do not sum overlapping timers or treat accelerated replay wall-clock timing as RoboRIO performance.

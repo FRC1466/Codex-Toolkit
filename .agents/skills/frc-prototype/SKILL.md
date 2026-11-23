@@ -1,11 +1,15 @@
 ---
 name: frc-prototype
-description: "Bring up FRC bench mechanisms, motors, sensors, partial robots, and early V1 code while CAD or hardware is incomplete. Create useful controls, logging, and tests for the hardware available today."
+description: "Build a first version of an FRC subsystem or bring up bench mechanisms, motors, sensors, and partial robots. Create useful controls, logging, and tests while CAD or hardware may still be incomplete."
 ---
 
 # Bring up available hardware
 
 Read current project conventions and the hardware revision before choosing an implementation. The goal is a useful experiment today with a clear path to V1; do not require final architecture or build a new framework for one motor.
+
+For a student learning by building, give them ownership of a real subsystem and pick one observable first behavior. Explain the proposed change before editing and match the depth to their experience. Focus on robot loop timing, hardware boundaries, and how inputs become outputs. Carry out the requested implementation unless the student asks to take part of the edit. Walk through the result and how it was checked.
+
+Follow subsystem standards adopted in the current project's `docs/robot/context.md` or repository instructions. When the user or destination robot project identifies Team 1466 (Webb Robotics), also read [1466's subsystem preferences](references/1466-subsystem-preferences.md). Use that reference for team defaults under the current robot project's decisions.
 
 - Identify what is physically present, what is absent, which controller/sensor APIs are installed, units/gearing, and the experiment's objective. Use confirmed values, label estimates, and ask for consequential electrical/mechanical details that cannot be inferred. Never guess a CAN ID or physical travel limit.
 - Match control complexity to evidence: bounded manual output for initial exploration, simple sequences once behavior is understood, closed loop after sensor scaling/direction and operating range are established. Unknown geometry need not block fake-input logic tests or controls for an unrelated roller.

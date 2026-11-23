@@ -7,6 +7,8 @@ description: "Investigate FRC failures and unexpected robot behavior using WPILO
 
 Identify the observed symptom, expected behavior, approximate time interval, code revision/dirty state, hardware revision, and active configuration. Do not assume current source matches a historical log; inspect logged build metadata and the corresponding source when available.
 
+For Team 1466, inspect code and configuration before asking for a log, following [the team's diagnosis preferences](../frc-prototype/references/1466-subsystem-preferences.md#faults-diagnosis-and-review).
+
 Use `tools/frc/frc.py log` to inspect WPILOG signals and extract a narrow interval. Read `docs/tooling.md` for supported types, absolute log timestamps, state carried into a window, bounded samples, and error behavior. Start with `--list --match '*RelevantMechanism*'`; use repeated `--signal` selectors with `--start` and `--end` for the event. Helpers do not decode arbitrary structs/protobufs or CTRE .hoot files.
 
 This helper needs an existing Python 3.10+ interpreter. If unavailable, use an available log decoder/viewer or provided export. Continue useful source investigation, but report unavailable binary-log evidence; do not claim to have decoded it. Do not ask the user to open a terminal or install a runtime just to load the skill.
@@ -19,4 +21,4 @@ Reconstruct a chronological event timeline. A signal may not have a sample insid
 
 Separate observations with signal/time/code references, competing explanations, and evidence needed to distinguish them. Current spikes alone do not prove a jam or shot. When the log is insufficient, identify the smallest additional measurement or test; avoid adding speculative fixes.
 
-Reproduce a supported software failure with fake inputs, simulation, or replay where practical, then implement the authorized correction and a meaningful regression scenario using `frc-verify`. Recorded-input replay can check logic but does not prove the physical response to changed outputs. Present remaining mechanical/electrical hypotheses and a concrete next test when software evidence cannot decide.
+Reproduce a supported software failure with fake inputs, simulation, or replay where practical, then implement the authorized correction and choose a proportionate check using `frc-verify`. Recorded-input replay can check logic but does not prove the physical response to changed outputs. Present remaining mechanical/electrical hypotheses and a concrete next test when software evidence cannot decide.

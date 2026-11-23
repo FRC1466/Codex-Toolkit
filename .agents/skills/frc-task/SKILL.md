@@ -7,6 +7,8 @@ description: "Scope substantial FRC development, split work among students, esta
 
 Users need not request this workflow by name. Infer scope from their request and carry out authorized work after the necessary discovery.
 
+For Team 1466 work, follow the decision and priority guidance in [1466's preferences](../frc-prototype/references/1466-subsystem-preferences.md#how-to-work).
+
 1. Read the applicable instructions, relevant source, `frc-toolkit.json`, and relevant current context under `docs/robot/`. Identify the season, prototype/robot revision, language, installed library versions, and architecture from evidence. Do not import a historical robot's design by default.
 2. Establish checkout, dirty state, branch, and explicit or configured target. When an existing Python 3.10+ interpreter is available, use `tools/frc/frc.py workspace` from the repository root (or an absolute script path with `--root`). Otherwise inspect equivalent read-only Git/file information through available tools. A missing target is unknown, not automatically `main`. Do not run Git mutations merely to inspect the workspace or ask the user to open a terminal/install a runtime.
 3. For shared work, inspect available GitHub issues/PRs through connected tools or an authenticated CLI when available. Read-only discovery is appropriate; creating/updating issues or messaging teammates requires the user's authorization. If access is unavailable, use supplied context, state the visibility gap, and continue independent local work. Local refs are snapshots; no helper silently fetches remote changes.
